@@ -27,29 +27,6 @@ The project follows a standard Spring Boot architecture:
 - model: Database entities (User, Entry, etc.).
 - security: Configuration for JWT and security filters.
 
-## API Endpoints
-
-### Authentication
-- POST `/auth/register`: Create a new user account.
-- POST `/auth/login`: Authenticate and receive a JWT token.
-
-### Entries
-- GET `/api/entries`: Retrieve all entries for the logged-in user.
-- GET `/api/entries/{id}`: Get specific entry details.
-- POST `/api/entries`: Create a new entry.
-- PUT `/api/entries/{id}`: Update an existing entry.
-- POST `/api/entries/{id}/lock`: Lock an entry for editing.
-
-## Setup and Installation
-
-1. Clone this repository.
-2. Ensure you have a MySQL database running.
-3. Configure your database credentials in `src/main/resources/application.properties`.
-4. Run the application using Maven:
-   ```bash
-   mvn spring-boot:run
-   ```
-
 ## Frontend Repository
 
 The frontend side of this project, built with React, can be found here:
